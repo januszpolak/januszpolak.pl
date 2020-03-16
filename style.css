@@ -222,11 +222,12 @@ img {
         display: none;
     }
 
-    h1 {
-        margin-top: 10%;
+    main h1 {
+        margin-top: 15%;
     }
 
-    p {
+    main p {
+
         font-size: 15px;
         width: 100%;
 
@@ -235,5 +236,15 @@ img {
     span {
         padding-top: 15%;
         padding-left: 5%;
-        z-index: 2;
+
+    }
+
+    .description {
+        position: absolute;
+        top: 15%;
+        left: 3%;
+    }
+
+    .description p {
+        font-size: 10px;
     }
