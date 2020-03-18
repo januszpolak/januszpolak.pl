@@ -13,6 +13,7 @@
     background-image: linear-gradient(#FB69F6, rgb(113, 36, 247));
 
 
+
 }
 
 .wrapper {
@@ -201,6 +202,26 @@ img {
 
 }
 
+.projects {
+    background-image: url(./backgroung.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.apps {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(10, 4, 44, 0.5);
+}
+
+.apps p {
+    padding: 5%;
+}
+
 @media (max-width:1024px) {
     header {
         right: 50%;
@@ -246,5 +267,13 @@ img {
     }
 
     .description p {
+        font-size: 10px;
+    }
+
+    .apps {
+        margin-top: 8%;
+    }
+
+    .apps p {
         font-size: 10px;
     }
