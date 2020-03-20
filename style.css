@@ -172,13 +172,13 @@ img {
 }
 
 .description h1 {
-    padding-top: 5%;
     padding-left: 5%;
 }
 
 .description p {
     font-weight: 400;
     font-size: 15px;
+    padding-top: 5%;
     padding-right: 2%;
     width: 80%;
 
@@ -186,26 +186,13 @@ img {
 
 .projects {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    background-color: rgb(23, 23, 71);
-
-
-}
-
-.contact {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(139, 0, 139);
-
-
-}
-
-.projects {
     background-image: url(./backgroung.png);
     background-position: center;
     background-size: cover;
+
+
 
 }
 
@@ -222,7 +209,78 @@ img {
     padding: 5%;
 }
 
+
+.contact {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(139, 0, 139);
+
+
+}
+
+
+@media (orientation: portrait) {
+    header {
+        width: 100%;
+
+    }
+
+    .nav-link {
+        font-size: 10px;
+    }
+
+    .ball,
+    .ball2 {
+        display: none;
+    }
+
+
+    img {
+        display: none;
+    }
+
+    main h1 {
+        padding-top: 25%;
+    }
+
+    main p {
+        padding-top: 10%;
+        font-size: 15px;
+        width: 100%;
+
+    }
+
+    span {
+        padding-top: 15%;
+        padding-left: 5%;
+
+    }
+
+    .description {
+        position: absolute;
+        top: 15%;
+        left: 3%;
+    }
+
+    .description p {
+        font-size: 10px;
+    }
+
+    .apps {
+        margin-top: 8%;
+    }
+
+    .apps p {
+        font-size: 10px;
+    }
+}
+
 @media (max-width:1024px) {
+    main h1 {
+        margin-top: 0;
+    }
+
     header {
         right: 50%;
         transform: translateX(50%);
@@ -243,9 +301,6 @@ img {
         display: none;
     }
 
-    main h1 {
-        margin-top: 15%;
-    }
 
     main p {
 
@@ -277,3 +332,4 @@ img {
     .apps p {
         font-size: 10px;
     }
+}
