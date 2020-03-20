@@ -214,11 +214,39 @@ img {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-color: rgb(139, 0, 139);
+    background-image: linear-gradient(#181747, rgb(113, 36, 247));
 
 
 }
 
+.con {
+    position: absolute;
+    left: 5%;
+    top: 30%;
+    width: 50%;
+
+}
+
+
+.con h1 {
+    padding: 2%;
+    font-size: 2rem;
+}
+
+.con p {
+    padding: 2%;
+    font-size: 20px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1C0D48;
+    padding: 3px;
+    text-align: center;
+}
 
 @media (orientation: portrait) {
     header {
@@ -274,7 +302,15 @@ img {
     .apps p {
         font-size: 10px;
     }
+
+    .con {
+        width: 80%;
+        top: 20%;
+    }
 }
+
+
+
 
 @media (max-width:1024px) {
     main h1 {
@@ -326,10 +362,27 @@ img {
     }
 
     .apps {
-        margin-top: 8%;
+        margin-top: 3%;
+        width: 90%;
     }
 
     .apps p {
         font-size: 10px;
+        padding: 2%;
     }
+
+    .con {
+
+        position: absolute;
+        left: 5%;
+        top: 20%;
+        width: 90%;
+
+    }
+
+    .con p {
+        font-size: 15px;
+        padding-left: 2%;
+    }
+
 }
