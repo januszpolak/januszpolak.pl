@@ -98,7 +98,7 @@ main {
     position: relative;
     align-items: flex-start;
     flex-direction: column;
-
+    min-height: 100vh;
 }
 
 main h1 {
@@ -151,7 +151,7 @@ img {
 
 .me {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #7143F6;
 
@@ -214,7 +214,7 @@ img {
 
 .contact {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(#181747, rgb(113, 36, 247));
 
@@ -295,6 +295,10 @@ img {
 
     }
 
+    .me {
+        min-height: 100vh;
+    }
+
     .description {
         position: absolute;
         top: 15%;
@@ -305,7 +309,12 @@ img {
         font-size: 10px;
     }
 
+    .projects {
+        min-height: 100vh;
+    }
+
     .apps {
+
         margin-top: 8%;
     }
 
@@ -314,6 +323,7 @@ img {
     }
 
     .con {
+
         width: 80%;
         top: 20%;
     }
@@ -324,7 +334,7 @@ img {
 
 @media (max-width:1168px) {
     main h1 {
-        margin-top: 0;
+        margin-top: 5%;
     }
 
     header {
@@ -334,7 +344,7 @@ img {
     }
 
     .nav-link {
-        font-size: 10px;
+        font-size: 20px;
     }
 
     .ball,
@@ -350,7 +360,7 @@ img {
 
     main p {
 
-        font-size: 15px;
+        font-size: 25px;
         width: 100%;
 
     }
@@ -361,14 +371,24 @@ img {
 
     }
 
+    .me {
+        min-height: 100vh;
+    }
+
     .description {
+        min-height: 100vh;
         position: absolute;
-        top: 15%;
+        top: 25%;
         left: 3%;
     }
 
     .description p {
-        font-size: 10px;
+        font-size: 20px;
+
+    }
+
+    .projects {
+        min-height: 100vh;
     }
 
     .apps {
@@ -377,7 +397,7 @@ img {
     }
 
     .apps p {
-        font-size: 10px;
+        font-size: 20px;
         padding: 2%;
     }
 
@@ -391,7 +411,7 @@ img {
     }
 
     .con p {
-        font-size: 15px;
+        font-size: 25px;
         padding-left: 2%;
     }
 
