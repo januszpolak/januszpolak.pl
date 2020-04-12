@@ -31,6 +31,8 @@
 
 }
 
+
+
 .ball {
     position: absolute;
     top: -70%;
@@ -101,6 +103,10 @@ main {
     min-height: 100vh;
 }
 
+.janusz {
+    display: none;
+}
+
 main h1 {
 
     padding-left: 5%;
@@ -144,7 +150,7 @@ i:hover {
 
 }
 
-img {
+.face {
     width: 90%;
 
 }
@@ -258,84 +264,25 @@ img {
     opacity: 0.3;
 }
 
-@media (orientation: portrait) {
-    header {
-        width: 100%;
-
-    }
-
-    .nav-link {
-        font-size: 10px;
-    }
-
-    .ball,
-    .ball2 {
-        display: none;
-    }
-
-
-    img {
-        display: none;
-    }
-
-    main h1 {
-        padding-top: 25%;
-    }
-
-    main p {
-        padding-top: 10%;
-        font-size: 15px;
-        width: 100%;
-
-    }
-
-    span {
-        padding-top: 15%;
-        padding-left: 5%;
-
-    }
-
-    .me {
+@media (max-width:1190px) {
+    .all {
+        position: relative;
         min-height: 100vh;
+        width: 100%;
+        overflow: hidden;
     }
 
-    .description {
-        position: absolute;
-        top: 15%;
-        left: 3%;
+    .wrapper {
+        background-image: url('./janek1.png');
+        background-size: 180%;
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        background-position-x: left;
+        height: 90vh;
+        width: 90%;
+
     }
 
-    .description p {
-        font-size: 10px;
-    }
-
-    .projects {
-        min-height: 100vh;
-    }
-
-    .apps {
-
-        margin-top: 8%;
-    }
-
-    .apps p {
-        font-size: 10px;
-    }
-
-    .con {
-
-        width: 80%;
-        top: 20%;
-    }
-}
-
-
-
-
-@media (max-width:1168px) {
-    main h1 {
-        margin-top: 5%;
-    }
 
     header {
         right: 50%;
@@ -344,7 +291,7 @@ img {
     }
 
     .nav-link {
-        font-size: 20px;
+        font-size: 10px;
     }
 
     .ball,
@@ -353,37 +300,41 @@ img {
     }
 
 
-    img {
+    .face {
         display: none;
     }
 
-
-    main p {
-
-        font-size: 25px;
-        width: 100%;
+    main h1 {
+        padding-top: 25%;
 
     }
 
-    span {
-        padding-top: 15%;
-        padding-left: 5%;
+    main p {
+        display: none;
 
+    }
+
+    main span {
+        display: block;
     }
 
     .me {
         min-height: 100vh;
     }
 
+    .janek {
+        display: none;
+    }
+
     .description {
         min-height: 100vh;
         position: absolute;
-        top: 25%;
+        top: 15%;
         left: 3%;
     }
 
     .description p {
-        font-size: 20px;
+        font-size: 10px;
 
     }
 
@@ -397,7 +348,7 @@ img {
     }
 
     .apps p {
-        font-size: 20px;
+        font-size: 10px;
         padding: 2%;
     }
 
@@ -411,8 +362,31 @@ img {
     }
 
     .con p {
-        font-size: 25px;
+        font-size: 10px;
         padding-left: 2%;
     }
+
+}
+
+@media(max-width:1190px) and (orientation: landscape) {
+    .wrapper {
+        background-image: url('./janek1.png');
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        background-position-x: 120%;
+        height: 90vh;
+        width: 100%;
+
+    }
+
+    main h1 {
+
+        padding-left: 5%;
+        padding-top: 15%;
+        padding-bottom: 2%;
+        z-index: 3;
+    }
+
 
 }
