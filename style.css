@@ -1,392 +1,348 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
 }
 
 .all {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(#FB69F6, rgb(113, 36, 247));
-
-
-
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(#fb69f6, rgb(113, 36, 247));
 }
 
 .wrapper {
-    display: flex;
-    position: relative;
-    background-image: linear-gradient(#6A33C0, #1B0C46);
-    height: 93vh;
-    width: 97%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-
-
-
+  display: flex;
+  position: relative;
+  background-image: linear-gradient(#6a33c0, #1b0c46);
+  height: 93vh;
+  width: 97%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 
-
-
 .ball {
-    position: absolute;
-    top: -70%;
-    left: -50%;
-    transform: translate(50%, 50%);
-    width: 100vh;
-    height: 100vh;
-    border-radius: 50%;
-    background-color: #EE62F6;
-    opacity: 0.2;
-    overflow: hidden;
+  position: absolute;
+  top: -70%;
+  left: -50%;
+  transform: translate(50%, 50%);
+  width: 100vh;
+  height: 100vh;
+  border-radius: 50%;
+  background-color: #ee62f6;
+  opacity: 0.2;
+  overflow: hidden;
 }
 
 .ball2 {
-    position: absolute;
-    bottom: -50%;
-    right: -50%;
-    transform: translate(-70%, -20%);
-    width: 100vh;
-    height: 100vh;
-    border-radius: 50%;
-    background-color: #EE62F6;
-    opacity: 0.2;
-    overflow: hidden;
+  position: absolute;
+  bottom: -50%;
+  right: -50%;
+  transform: translate(-70%, -20%);
+  width: 100vh;
+  height: 100vh;
+  border-radius: 50%;
+  background-color: #ee62f6;
+  opacity: 0.2;
+  overflow: hidden;
 }
 
 header {
-    display: flex;
-    position: fixed;
-    top: 5%;
-    right: 5%;
-    width: 40%;
-    height: 10vh;
-    align-items: center;
-    z-index: 999;
+  display: flex;
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  width: 40%;
+  height: 10vh;
+  align-items: center;
+  z-index: 999;
 }
 
 nav {
-    flex: 1;
-
+  flex: 1;
 }
 
 .nav-links {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
 }
 
 .nav-link {
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-    transition: 0.3s ease-in;
-
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  transition: 0.3s ease-in;
 }
 
 .nav-link:hover {
-    color: #1B0C46;
-    border-bottom: 2px solid #1B0C46;
+  color: #1b0c46;
+  border-bottom: 2px solid #1b0c46;
 }
 
 main {
-    display: flex;
-    position: relative;
-    align-items: flex-start;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .janusz {
-    display: none;
+  display: none;
 }
 
 main h1 {
+  padding-left: 5%;
+  padding-top: 15%;
+  padding-bottom: 2%;
+  z-index: 3;
+}
 
+main p {
+  font-size: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 60%;
+  z-index: 3;
+}
+
+span {
+  display: flex;
+  padding-top: 5%;
+  padding-left: 5%;
+  z-index: 2;
+}
+
+span a {
+  padding-right: 15%;
+}
+
+i {
+  padding-right: 15%;
+  font-size: 30px;
+  transition: 0.3s ease-in;
+}
+
+i:hover {
+  color: #1b0c46;
+}
+
+.face {
+  width: 90%;
+}
+
+.me {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #7143f6;
+}
+
+.janek {
+  position: absolute;
+  width: 40%;
+  bottom: 0;
+  left: 0;
+}
+
+.description {
+  position: absolute;
+  left: 40%;
+  top: 25%;
+}
+
+.description h1 {
+  padding-left: 5%;
+}
+
+.description p {
+  font-weight: 400;
+  font-size: 15px;
+  padding-top: 5%;
+  padding-right: 2%;
+  width: 90%;
+}
+
+.projects {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(./backgroung.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.apps {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(10, 4, 44, 0.5);
+}
+
+.apps p {
+  z-index: 5;
+  padding: 5%;
+}
+
+.contact {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(#181747, rgb(113, 36, 247));
+}
+
+.con {
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  width: 50%;
+}
+
+.con h1 {
+  padding: 2%;
+  font-size: 2rem;
+}
+
+.con p {
+  padding: 2%;
+  font-size: 20px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1c0d48;
+  padding: 3px;
+  text-align: center;
+}
+
+.maps {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  opacity: 0.3;
+}
+
+@media (max-width: 1190px) {
+  .all {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .wrapper {
+    background-image: url("./janek1.png");
+    background-size: 180%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: left;
+    height: 90vh;
+    width: 90%;
+  }
+
+  header {
+    right: 50%;
+    transform: translateX(50%);
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 10px;
+  }
+
+  .ball,
+  .ball2 {
+    display: none;
+  }
+
+  .face {
+    display: none;
+  }
+
+  main h1 {
+    padding-top: 25%;
+  }
+
+  main p {
+    display: none;
+  }
+
+  main span {
+    display: block;
+  }
+
+  .me {
+    min-height: 100vh;
+  }
+
+  .janek {
+    display: none;
+  }
+
+  .description {
+    min-height: 100vh;
+    position: absolute;
+    top: 15%;
+    left: 3%;
+  }
+
+  .description p {
+    font-size: 10px;
+  }
+
+  .projects {
+    min-height: 100vh;
+  }
+
+  .apps {
+    margin-top: 3%;
+    width: 90%;
+  }
+
+  .apps p {
+    font-size: 10px;
+    padding: 2%;
+  }
+
+  .con {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    width: 90%;
+  }
+
+  .con p {
+    font-size: 10px;
+    padding-left: 2%;
+  }
+}
+
+@media (max-width: 1190px) and (orientation: landscape) {
+  .wrapper {
+    background-image: url("./janek1.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: 120%;
+    height: 90vh;
+    width: 100%;
+  }
+
+  main h1 {
     padding-left: 5%;
     padding-top: 15%;
     padding-bottom: 2%;
     z-index: 3;
-}
-
-main p {
-    font-size: 20px;
-    padding-left: 5%;
-    padding-right: 5%;
-    width: 60%;
-    z-index: 3;
-}
-
-
-span {
-    display: flex;
-    padding-top: 5%;
-    padding-left: 5%;
-    z-index: 2;
-
-
-}
-
-span a {
-    padding-right: 15%;
-}
-
-i {
-    padding-right: 15%;
-    font-size: 30px;
-    transition: 0.3s ease-in;
-
-
-}
-
-i:hover {
-    color: #1B0C46;
-
-}
-
-.face {
-    width: 90%;
-
-}
-
-.me {
-    position: relative;
-    min-height: 100vh;
-    width: 100%;
-    background-color: #7143F6;
-
-
-}
-
-.janek {
-    position: absolute;
-    width: 40%;
-    bottom: 0;
-    left: 0;
-}
-
-.description {
-    position: absolute;
-    left: 40%;
-    top: 25%;
-
-}
-
-.description h1 {
-    padding-left: 5%;
-}
-
-.description p {
-    font-weight: 400;
-    font-size: 15px;
-    padding-top: 5%;
-    padding-right: 2%;
-    width: 90%;
-
-}
-
-.projects {
-    position: relative;
-    min-height: 100vh;
-    width: 100%;
-    background-image: url(./backgroung.png);
-    background-position: center;
-    background-size: cover;
-
-
-
-}
-
-.apps {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 80%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(10, 4, 44, 0.5);
-
-}
-
-.apps p {
-    padding: 5%;
-}
-
-
-.contact {
-    position: relative;
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(#181747, rgb(113, 36, 247));
-
-
-}
-
-.con {
-    position: absolute;
-    left: 5%;
-    top: 30%;
-    width: 50%;
-
-}
-
-
-.con h1 {
-    padding: 2%;
-    font-size: 2rem;
-}
-
-.con p {
-    padding: 2%;
-    font-size: 20px;
-}
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #1C0D48;
-    padding: 3px;
-    text-align: center;
-}
-
-.maps {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 80%;
-    opacity: 0.3;
-}
-
-@media (max-width:1190px) {
-    .all {
-        position: relative;
-        min-height: 100vh;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .wrapper {
-        background-image: url('./janek1.png');
-        background-size: 180%;
-        background-repeat: no-repeat;
-        background-position-y: bottom;
-        background-position-x: left;
-        height: 90vh;
-        width: 90%;
-
-    }
-
-
-    header {
-        right: 50%;
-        transform: translateX(50%);
-        width: 100%;
-    }
-
-    .nav-link {
-        font-size: 10px;
-    }
-
-    .ball,
-    .ball2 {
-        display: none;
-    }
-
-
-    .face {
-        display: none;
-    }
-
-    main h1 {
-        padding-top: 25%;
-
-    }
-
-    main p {
-        display: none;
-
-    }
-
-    main span {
-        display: block;
-    }
-
-    .me {
-        min-height: 100vh;
-    }
-
-    .janek {
-        display: none;
-    }
-
-    .description {
-        min-height: 100vh;
-        position: absolute;
-        top: 15%;
-        left: 3%;
-    }
-
-    .description p {
-        font-size: 10px;
-
-    }
-
-    .projects {
-        min-height: 100vh;
-    }
-
-    .apps {
-        margin-top: 3%;
-        width: 90%;
-    }
-
-    .apps p {
-        font-size: 10px;
-        padding: 2%;
-    }
-
-    .con {
-
-        position: absolute;
-        left: 5%;
-        top: 20%;
-        width: 90%;
-
-    }
-
-    .con p {
-        font-size: 10px;
-        padding-left: 2%;
-    }
-
-}
-
-@media(max-width:1190px) and (orientation: landscape) {
-    .wrapper {
-        background-image: url('./janek1.png');
-        background-size: 60%;
-        background-repeat: no-repeat;
-        background-position-y: bottom;
-        background-position-x: 120%;
-        height: 90vh;
-        width: 100%;
-
-    }
-
-    main h1 {
-
-        padding-left: 5%;
-        padding-top: 15%;
-        padding-bottom: 2%;
-        z-index: 3;
-    }
-
-
+  }
 }
